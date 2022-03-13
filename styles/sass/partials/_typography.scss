@@ -1,0 +1,20 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap");
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 1rem;
+  color: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: $solid-white;
+}

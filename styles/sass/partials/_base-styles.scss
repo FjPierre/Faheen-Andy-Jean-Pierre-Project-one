@@ -3,3 +3,32 @@
   width: 90%;
   margin: 0 auto;
 }
+
+// .skip-link { refer to simple-nav exercise
+//         position: absolute;
+//         left: -1000px;
+//         top: 5px;
+//         z-index: 999;
+//         background: white;
+//         color: black;
+
+//         .skip-link:focus {
+//           left: 0;
+//         }
+
+ul {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: $tertiary;
+  padding: 15px 50px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}

@@ -18,24 +18,27 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="main-blue">
+      <!-- <a href="#maincontent" class="skip-link">Skip to main content</a> refer simple-nav excercise-->
       <div class="index wrapper">
-        <h1>Under <span>the</span> sea</h1>
         <nav>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <h1>Under <span>the</span> sea</h1>
         </nav>
       </div>
       <div class="fish-container">
         <img src="./assets/home-box-header.png" alt="" />
       </div>
     </header>
-
-    <section>
+    <!-- ?? <main id="maincontent"></main> refer simple-nav excercise-->
+    <section class="sea dark-blue">
       <div class="sea-container wrapper">
-        <h1>What is under the seas</h1>
+        <h2>What is under the sea?</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
           rerum sunt rem illo a aperiam velit debitis odit, laborum totam ipsa
@@ -49,20 +52,111 @@
       </div>
     </section>
 
-    <section>
-      <div>
-        <div></div>
+    <section class="greenish">
+      <div class="wrapper">
+        <div class="aquarium">
+          <div class="aquarium-img">
+            <img
+              src="./assets/left-image.jpg"
+              alt="A woman looking at fishes in the aquarium"
+            />
+          </div>
+          <div class="aquarium-text">
+            <h3>New additions</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              asperiores culpa sunt maiores ipsum officia molestiae quia veniam
+              libero facilis earum exercitationem, debitis reprehenderit
+              repellat impedit nostrum pariatur, natus eaque magnam cupiditate
+              consectetur sapiente!
+            </p>
+            <button>Read more</button>
+          </div>
+        </div>
+
+        <div class="ocean">
+          <div class="nemo-text">
+            <h3>Meet real Nemo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              magnam, odit perferendis quae similique modi fuga explicabo eius
+              facere dolor placeat sed molestias laboriosam iure, earum
+              aspernatur quaerat commodi consequuntur beatae error, aut minima.
+            </p>
+            <button>Read more</button>
+          </div>
+          <div class="nemo-img"></div>
+          <img src="./assets/right-image.jpg" alt="An orange fish swimming" />
+        </div>
       </div>
     </section>
 
-    <section></section>
+    <section class="icons dark-blue">
+      <div class="wrapper">
+        <div>
+          <div class="location">
+            <i class="fa-solid fa-location-arrow"></i>
+            <h3>Locations</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo,
+            cupiditate doloribus, aperiam rerum quidem incidunt id quaerat
+            delectus sed repudiandae maiores dolorum architecto harum ad.
+          </p>
+        </div>
 
-    <section class="whale"></section>
+        <div>
+          <div class="community">
+            <i class="fa-solid fa-location-arrow"></i>
+            <h3>Community</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            nobis praesentium incidunt ipsam, delectus omnis dolor, inventore
+            explicabo ipsum error quod quibusdam est pariatur facere corporis?
+          </p>
+        </div>
 
-    <section>
+        <div>
+          <div class="sheet">
+            <i class="fa-solid fa-file"></i>
+            <h3>Blog</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum
+            obcaecati velit illo ratione dolor vitae in consequuntur error
+            necessitatibus magni deserunt, laboriosam consectetur ex commodi.
+          </p>
+        </div>
+
+        <div>
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Get in touch</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+            animi minus quidem sed eum enim officiis voluptatum pariatur, eius,
+            deserunt temporibus ullam. Maxime maiores quas a?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="whale">
+      <img
+        src="./assets/banner.jpg"
+        alt="A woman standing in front of a whale in an aquarium"
+      />
+    </section>
+
+    <section class="fido dark-blue">
       <div class="wrapper">
         <div class="image-container">
-          <img src="" alt="A group of fish in the ocean swimming" />
+          <img
+            src="./assets/small-box.jpg"
+            alt="A group of fish in the ocean swimming"
+          />
         </div>
         <div class="text-container">
           <h2>This month profile</h2>
@@ -78,8 +172,9 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="gallery wrapper">
+
+    <section class="gallery greenish">
+      <div class="wrapper">
         <ul>
           <li>
             <img

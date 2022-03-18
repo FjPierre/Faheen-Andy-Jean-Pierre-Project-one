@@ -1,0 +1,105 @@
+section {
+  padding: 50px 0;
+}
+
+.dark-blue,
+.whale {
+  background-color: $primary;
+}
+
+.greenish {
+  background-color: $secondary;
+}
+
+.sea {
+  padding: 200px 0;
+}
+
+.sea-container {
+  text-align: center;
+
+  p {
+    text-align: start;
+  }
+}
+
+.aquarium,
+.ocean {
+  display: flex;
+
+  button {
+    background-color: $primary;
+    color: $solid-white;
+  }
+}
+
+.aquarium {
+  padding-bottom: 100px;
+
+  .aquarium-img {
+    width: 100%;
+    margin-right: 30px;
+  }
+}
+
+.ocean {
+  text-align: right;
+
+  .nemo-img {
+    margin-left: 60px;
+  }
+}
+
+.location,
+.community,
+.sheet,
+.phone {
+  border: 1px solid blue;
+  // display: flex;
+  width: 20%;
+}
+.icons i {
+  border: 1px solid red;
+  text-align: center;
+  width: 5%;
+  background-color: $tertiary;
+  border-radius: 50%;
+}
+
+.whale {
+  padding: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.fido .wrapper {
+  display: flex;
+
+  // .image-container,
+  .text-container {
+    flex-basis: 65%;
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+
+  .image-container {
+    margin-right: 120px;
+    box-shadow: 2.3rem 1.5rem 0px 0.2rem $tertiary;
+  }
+}
+
+.gallery {
+  ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  li {
+    display: block;
+    flex-basis: calc(33% - 50px);
+  }
+}

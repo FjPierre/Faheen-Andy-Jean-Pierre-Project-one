@@ -322,6 +322,13 @@ a {
   text-decoration: none;
 }
 
+.aquarium button,
+.ocean button,
+.info-container button {
+  background-color: #0c1423;
+  color: #fff;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -382,8 +389,11 @@ header {
 }
 
 .fish-container {
-  border: 1px solid red;
   width: 50%;
+  margin-bottom: 150px;
+  position: relative;
+  bottom: 150px;
+  left: 45%;
 }
 
 h1 span {
@@ -447,23 +457,27 @@ section {
   text-align: right;
 }
 .ocean .nemo-img {
-  margin-left: 60px;
+  width: 50%;
 }
 
-.location,
-.community,
-.sheet,
-.phone {
-  border: 1px solid blue;
-  width: 20%;
+.solution,
+.solution-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-
-.icons i {
-  border: 1px solid red;
-  text-align: center;
-  width: 5%;
-  background-color: #86e0f9;
-  border-radius: 50%;
+.solution .location-one,
+.solution .community-one,
+.solution .sheet-one,
+.solution .phone-one,
+.solution-two .location-one,
+.solution-two .community-one,
+.solution-two .sheet-one,
+.solution-two .phone-one {
+  width: 100%;
 }
 
 .whale {
@@ -502,4 +516,140 @@ section {
   display: block;
   -ms-flex-preferred-size: calc(33% - 50px);
       flex-basis: calc(33% - 50px);
+}
+
+.touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.touch h2 {
+  padding-bottom: 25px;
+}
+
+.info-container {
+  margin-left: 50px;
+  -webkit-box-shadow: -32px 80px #86e0f9;
+          box-shadow: -32px 80px #86e0f9;
+  position: relative;
+  bottom: 250px;
+}
+
+.social {
+  width: 30%;
+}
+
+.swim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.swim .discovering {
+  margin-left: 60px;
+  width: calc(70% - 60px);
+}
+.swim .discovering h2 {
+  padding-bottom: 20px;
+}
+
+.discovering-heading {
+  position: relative;
+  bottom: 200px;
+  -webkit-box-shadow: -21px 75px 0 0 #86e0f9;
+          box-shadow: -21px 75px 0 0 #86e0f9;
+}
+
+.swim-two {
+  width: 30%;
+  margin-top: 100px;
+  padding: 20px;
+  height: 50%;
+}
+.swim-two ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: disc;
+  color: #fff;
+}
+.swim-two ul li {
+  font-size: 0.7rem;
+  width: 100%;
+}
+
+.swim-two img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid red;
+  position: relative;
+  bottom: 30px;
+  right: 10px;
+}
+
+.tuesday,
+.wednesday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tuesday .picture-container,
+.wednesday .picture-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 35px;
+}
+.tuesday .day-container,
+.wednesday .day-container {
+  margin-left: 25px;
+}
+
+.comments h3 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.info-container {
+  width: 100%;
+}
+.info-container .forms {
+  background-color: #0f614e;
+  padding: 50px;
+}
+.info-container button {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-container .input-one,
+.form-container .input-two {
+  width: 100%;
+  margin: 40px 0;
+  border-bottom: 2px solid #86e0f9;
+}
+.form-container .input-one {
+  margin-right: 20px;
+}
+
+input,
+textarea {
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+}
+
+input {
+  border: none;
+}
+
+textarea {
+  border: 2px solid #86e0f9;
+  resize: none;
 }

@@ -1,0 +1,47 @@
+.info-container {
+  width: 100%;
+  //   background-color: $secondary;
+
+  .forms {
+    background-color: $secondary;
+    padding: 50px;
+  }
+
+  button {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+
+.form-container {
+  display: flex;
+
+  .input-one,
+  .input-two {
+    width: 100%;
+    margin: 40px 0;
+    border-bottom: 2px solid $tertiary;
+  }
+
+  .input-one {
+    margin-right: 20px;
+  }
+}
+
+input,
+textarea {
+  color: $solid-white;
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+}
+
+input {
+  border: none;
+}
+
+textarea {
+  border: 2px solid $tertiary;
+  resize: none;
+  //   margin: 40px 20px;
+}

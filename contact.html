@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <script
+      src="https://kit.fontawesome.com/f63e884e71.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +20,7 @@
   <body>
     <header class="contact-orange">
       <div class="wrapper">
-        <h1>Get in touch</h1>
+        <!-- <h1>Get in touch</h1> -->
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -28,28 +32,33 @@
       </div>
     </header>
     <section class="dark-blue">
-      <div class="wrapper">
+      <div class="touch wrapper">
         <div class="social">
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
           <h3>info@email.com</h3>
           <p>123-456-7890</p>
           <p>123 Queen Street West, Unit 10 Toronto, Ontario, M5V 2D5</p>
         </div>
-        <div class="info-container">
-          <form
-            action="#"
-            method="POST"
-            class="contact-form"
-            name="contact-form"
-          >
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" placeholder="Name" />
 
-            <label for="email" class="sr-only">Email address</label>
-            <input type="email" id="email" placeholder="Email address" />
+        <div class="info-container">
+          <h2>Get in touch</h2>
+          <div class="forms">
+            <div class="form-container">
+              <div class="input-one">
+                <form action="#" method="POST"></form>
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name" />
+              </div>
+
+              <div class="input-two">
+                <form action="#" method="POST"></form>
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email" />
+              </div>
+            </div>
 
             <label for="message" class="sr-only">Message</label>
             <textarea
@@ -60,7 +69,7 @@
               placeholder="Message"
             ></textarea>
             <button>Submit</button>
-          </form>
+          </div>
         </div>
       </div>
     </section>

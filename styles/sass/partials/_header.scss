@@ -22,8 +22,11 @@ header {
 }
 
 .fish-container {
-  border: 1px solid red;
   width: 50%;
+  margin-bottom: 150px;
+  position: relative;
+  bottom: 150px;
+  left: 45%;
 }
 
 h1 span {

@@ -1,0 +1,102 @@
+@media (max-width: 1000px) {
+  .aquarium,
+  .ocean,
+  .fido-one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ocean button {
+    margin-bottom: 15px;
+  }
+
+  .gallery {
+    padding: 25px 0;
+  }
+  .gallery li:last-child {
+    display: none;
+
+    li {
+      width: 100%;
+      flex-basis: 49%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .fish-container {
+    bottom: -100px;
+  }
+
+  .solution,
+  .solution-two {
+    flex-direction: column;
+  }
+
+  .touch {
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+    }
+
+    .info-container {
+      box-shadow: none;
+      position: static;
+      margin-left: 0;
+      bottom: 0;
+    }
+
+    .social {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    padding-top: 50px;
+    font-size: 4.5rem;
+  }
+  .nav-links {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $primary;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav :checked ~ .nav-links {
+    bottom: 0;
+  }
+  .hamburger-menu {
+    // border: 1px solid red;
+    display: block;
+  }
+  nav :checked ~ .hamburger-menu .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .hamburger-menu .line:nth-child(2) {
+    opacity: 0;
+  }
+  nav :checked ~ .hamburger-menu .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  .fish-container {
+    display: none;
+  }
+}

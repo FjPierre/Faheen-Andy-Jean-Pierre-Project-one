@@ -98,7 +98,8 @@ section {
 
   li {
     display: block;
-    flex-basis: calc(33% - 50px);
+    // flex-basis: 32%;
+    flex-basis: calc(32% - 50px);
   }
 }
 
@@ -126,7 +127,7 @@ section {
 
   .discovering {
     margin-left: 60px;
-    width: calc(70% - 60px);
+    width: calc(75% - 60px);
 
     h2 {
       padding-bottom: 20px;
@@ -141,7 +142,7 @@ section {
 }
 
 .swim-two {
-  width: 30%;
+  width: 25%;
   margin-top: 100px;
   padding: 20px;
   height: 50%;
@@ -152,18 +153,22 @@ section {
     color: $solid-white;
 
     li {
-      font-size: 0.7rem;
       width: 100%;
     }
   }
 }
 
-.swim-two img {
-  flex-grow: 1;
-  border: 1px solid red;
-  position: relative;
-  bottom: 30px;
-  right: 10px;
+.swim-two {
+  li,
+  p {
+    font-size: 0.7rem;
+  }
+  img {
+    // flex-grow: 1;
+    position: relative;
+    bottom: 30px;
+    right: 60px;
+  }
 }
 
 .tuesday,

@@ -43,5 +43,11 @@ input {
 textarea {
   border: 2px solid $tertiary;
   resize: none;
-  //   margin: 40px 20px;
+}
+
+.blog-form button {
+  background-color: $secondary;
+  color: $solid-white;
+  width: 100%;
+  margin-top: 25px;
 }

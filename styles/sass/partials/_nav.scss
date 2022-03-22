@@ -8,3 +8,22 @@ nav ul {
 nav ul li {
   padding: 0 10px;
 }
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 5%;
+
+  .line {
+    width: 30px;
+    height: 5px;
+    background-color: $solid-white;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+}

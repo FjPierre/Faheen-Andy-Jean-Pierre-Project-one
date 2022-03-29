@@ -193,18 +193,21 @@
             <img
               src="./assets/gallery-image-1.jpg"
               alt="A girl standing in front of an aquarium"
+              class="jsImg"
             />
           </li>
           <li>
             <img
               src="./assets/gallery-image-2.jpg"
               alt="A giant shark in the aquarium"
+              class="jsImgTwo"
             />
           </li>
           <li>
             <img
               src="./assets/gallery-image-3.jpg"
               alt="A few fishes in the aquarium swimming"
+              class="jsImgThree"
             />
           </li>
         </ul>
@@ -214,5 +217,21 @@
     <footer>
       <p>Copyright &copy; 2018 HackerYou</p>
     </footer>
+
+    <script>
+      // Use a selector to grab img
+      const jsImg = document.querySelector(".jsImg");
+      const jsImgTwo = document.querySelector(".jsImgTwo");
+      const jsImgThree = document.querySelector(".jsImgThree");
+      // console.log(images);
+
+      function handleClick(event) {
+        event.target.style.display = "none";
+      }
+
+      jsImg.addEventListener("click", handleClick);
+      jsImgTwo.addEventListener("click", handleClick);
+      jsImgThree.addEventListener("click", handleClick);
+    </script>
   </body>
 </html>

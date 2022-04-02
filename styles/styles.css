@@ -396,7 +396,9 @@ header {
 }
 
 .main-blue {
-  background-image: url(../assets/header-image.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../assets/header-image.jpg) center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../assets/header-image.jpg) center;
+  background-size: cover;
 }
 
 .shark {
@@ -694,6 +696,13 @@ textarea {
     text-align: center;
   }
 
+  .fido .wrapper .image-container {
+    padding-bottom: 25px;
+    margin: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
   .ocean button {
     margin-bottom: 15px;
   }
@@ -712,45 +721,6 @@ textarea {
   }
 }
 @media (max-width: 800px) {
-  .fish-container {
-    bottom: -100px;
-  }
-
-  .solution,
-.solution-two {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .touch {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .touch h2 {
-    text-align: center;
-  }
-  .touch .info-container {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    position: static;
-    margin-left: 0;
-    bottom: 0;
-  }
-  .touch .social {
-    text-align: center;
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  h1 {
-    padding-top: 50px;
-    font-size: 4.5rem;
-  }
-
   .nav-links {
     position: fixed;
     z-index: 9;
@@ -798,6 +768,46 @@ textarea {
   nav :checked ~ .hamburger-menu .line:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(-225deg);
             transform: translateY(-10px) rotate(-225deg);
+  }
+
+  .fish-container {
+    bottom: -100px;
+  }
+
+  .solution,
+.solution-two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .touch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .touch h2 {
+    text-align: center;
+  }
+  .touch .info-container {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: static;
+    margin-left: 0;
+    bottom: 0;
+  }
+  .touch .social {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    padding-top: 50px;
+    font-size: 4.5rem;
   }
 
   .fish-container {

@@ -384,6 +384,11 @@ nav ul li {
   transition: all 0.3s ease-in-out;
 }
 
+a:hover,
+a:focus {
+  color: #86e0f9;
+}
+
 header {
   width: 100%;
   -ms-flex-wrap: wrap;
@@ -411,10 +416,10 @@ header {
 
 .fish-container {
   width: 50%;
-  margin-bottom: 150px;
+  margin-bottom: 10px;
   position: relative;
   bottom: 150px;
-  left: 45%;
+  left: 52.7%;
 }
 
 h1 span {
@@ -423,9 +428,10 @@ h1 span {
 
 footer {
   background: #86e0f9;
-  padding: 15px 50px;
 }
 footer p {
+  margin: 0;
+  padding: 5px 0;
   text-align: center;
   color: #0c1423;
 }
